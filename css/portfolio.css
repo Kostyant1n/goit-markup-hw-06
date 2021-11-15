@@ -19,11 +19,6 @@
 
 /* Button-filter */
 
-.button {
-  transition: var(--tr-cl);
-  transition: var(--tr-bg-cl);
-}
-
 .filter {
   display: flex;
   list-style: none;
@@ -32,13 +27,14 @@
   margin-bottom: 0px;
   padding: 0;
   align-items: center;
+  outline: none;
 }
 
 .filter .item:not(:last-child) {
   margin-right: 8px;
 }
 
-.button.filter {
+.button-filter {
   display: inline-block;
   font-weight: 500;
   font-size: 16px;
@@ -48,13 +44,17 @@
   background: var(--pprimary-wight-color);
   border-radius: 4px;
 
+  transition: var(--tr-cl) var(--tr-bg-cl);
+
   cursor: pointer;
   border: none;
   padding: 6px 22px;
+  transition-duration: var(--tr-ms);
+  transition-timing-function: var(--tr-cb);
 }
 
-.button.filter:hover,
-.button.filter:focus {
+.button-filter:hover,
+.button-filter:focus {
   outline: none;
   color: var(--pprimary-wight-color);
   background-color: var(--paccent-pick-color);
