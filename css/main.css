@@ -74,13 +74,13 @@
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
 
   width: 521px;
   height: 528px;
-  padding: 36px;
+  padding: 40px;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -115,6 +115,84 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 50%;
+}
+
+/* form */
+.hero .js.speaker-form {
+  position: absolute;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-field input {
+  margin: 0;
+  padding: 12px 11px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form {
+  outline: 1px solid tomato;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  color: #212121;
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 4px;
+  text-align: left;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.form-field .icon {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  transform: translateY(0px);
+  background-color: black;
+}
+
+.form-field input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.comment {
+  width: 100%;
+  height: 100%;
+  padding: 16px 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 /* Advantages */

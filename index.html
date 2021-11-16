@@ -39,7 +39,9 @@
             <li class="item">
               <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="item">
+              <a href="" class="link">Контакты</a>
+            </li>
           </ul>
         </nav>
 
@@ -72,14 +74,11 @@
           <button data-modal-open class="button hero link" type="button">
             Заказать услугу
           </button>
+
+          <!-- Модалка -->
+
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                suscipit vero quibusdam adipisci quos natus quaerat ex culpa,
-                aperiam a obcaecati, saepe fugit. Quasi aut nesciunt commodi
-                atque quas unde.
-              </p>
               <button class="button-close" data-modal-close>
                 <svg class="svg-icon">
                   <use
@@ -87,6 +86,63 @@
                   ></use>
                 </svg>
               </button>
+
+              <!-- Форма -->
+              <form class="js.speaker-form">
+                <h2 class="form-title">
+                  Оставьте свои данные, мы вам перезвоним
+                </h2>
+                <div class="form-field">
+                  <label for="name" class="form-label">Имя</label>
+                  <span class="icon"></span>
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="name"
+                    id="name"
+                    autofocus
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="tel" class="form-label">Телефон</label>
+                  <span class="icon"></span>
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    autofocus
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="name" class="form-label">Почта</label>
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="mail"
+                    id="mail"
+                  />
+                  <span class="icon">1</span>
+                </div>
+                <div class="form-field">
+                  <label for="comment">Комментарий</label>
+                  <textarea
+                    class="comment"
+                    name="comment"
+                    id="comment"
+                    rows="3"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </div>
+                <input type="checkbox" name="policy" value="html" id="policy" />
+                <label for="policy"
+                  >Соглашаюсь с рассылкой и принимаю
+                  <span><a href="">Условия договора</a></span></label
+                >
+                <button type="submit">Оставить заявку</button>
+              </form>
             </div>
           </div>
         </div>
