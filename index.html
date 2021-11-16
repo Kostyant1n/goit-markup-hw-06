@@ -88,10 +88,10 @@
               </button>
 
               <!-- Форма -->
-              <form class="js.speaker-form">
-                <h2 class="form-title">
+              <form action="#" class="js.speaker-form">
+                <p class="form-title">
                   Оставьте свои данные, мы вам перезвоним
-                </h2>
+                </p>
                 <div class="form-field">
                   <label for="name" class="form-label">Имя</label>
                   <input
@@ -108,13 +108,7 @@
 
                 <div class="form-field">
                   <label for="tel" class="form-label">Телефон</label>
-                  <input
-                    class="form-input"
-                    type="tel"
-                    name="tel"
-                    id="tel"
-                    autofocus
-                  />
+                  <input class="form-input" type="tel" name="tel" id="tel" />
                   <svg class="svg-icon">
                     <use href="./images/icons.svg#icon-phone"></use>
                   </svg>
@@ -138,16 +132,49 @@
                     class="comment"
                     name="comment"
                     id="comment"
-                    rows="3"
                     placeholder="Введите текст"
                   ></textarea>
                 </div>
-                <input type="checkbox" name="policy" value="html" id="policy" />
-                <label for="policy"
-                  >Соглашаюсь с рассылкой и принимаю
-                  <span><a href="">Условия договора</a></span></label
-                >
-                <button type="submit">Оставить заявку</button>
+                <div class="modal-field">
+                  <input
+                    type="checkbox"
+                    class="input-check visually-hidden"
+                    id="input-check"
+                    value="yes"
+                    name="policy"
+                  />
+                  <label for="input-check" class="check-text">
+                    <span>
+                      <svg class="input-icon-check" width="11" height="8">
+                        <use href="./images/icons.svg#icon-check"></use>
+                      </svg>
+                    </span>
+                    Соглашаюсь с рассылкой и принимаю
+                    <a href="" class="check-link">Условия договора</a></label
+                  >
+                  <button class="button-check link" type="button">
+                    Отправить
+                  </button>
+                </div>
+                <!-- <div class="form-input">
+                  <input
+                    type="checkbox"
+                    name="policy"
+                    value="yes"
+                    id="policy"
+                  />
+                  <label for="policy"
+                    ><span
+                      ><svg class="input-icon-check" width="11" height="8">
+                        <use href="./images/icons.svg#icon-check"></use>
+                      </svg> </span
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a href="">Условия договора</a></label
+                  >
+                  <button class="modal-btn" type="submit">
+                    Оставить заявку
+                  </button>
+                </div> -->
               </form>
             </div>
           </div>

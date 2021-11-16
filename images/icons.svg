@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
     <symbol id="icon-check" viewBox="0 0 42 32">
-      <path stroke="#fff" stroke-width=".64"
+      <path
         d="m6.262 15.206-.221-.211-.221.208-3.085 2.925.243.234 11.408 10.88.221-.211L38.863 5.892l-.243-.23-3.043-2.902-.221.211-20.97 19.987-8.125-7.75z" />
     </symbol>
     <symbol id="icon-email" viewBox="0 0 32 32">
