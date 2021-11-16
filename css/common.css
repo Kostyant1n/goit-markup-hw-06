@@ -318,8 +318,6 @@ address {
 
 .ftsocial-link {
   align-self: center;
-  align-items: center;
-  border-radius: 4px;
   margin-left: 70px;
 }
 
@@ -336,4 +334,78 @@ address {
 
 .item-social:not(:last-child) {
   margin-right: 10px;
+}
+
+.ft-email {
+  align-self: center;
+  margin-left: 93px;
+}
+
+.email-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.ft-input {
+  width: 358px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  padding-right: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.01);
+
+  transition: color, background-color, border, fill;
+  transition-duration: var(--tr-ms);
+  transition-timing-function: var(--tr-cb);
+}
+
+.ft-input::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-ftmail {
+  position: relative;
+  display: inline-block;
+  color: var(--btn-wight-color);
+  background-color: var(--accent-pick-color);
+  text-decoration: none;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  letter-spacing: 0.06em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 62px;
+  margin-left: 10px;
+}
+
+.svg-ft-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 13px;
+  left: 148px;
+  fill: var(--btn-wight-color);
 }

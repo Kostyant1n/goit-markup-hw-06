@@ -35,7 +35,9 @@
             <span class="logo-color">Web</span>Studio</a
           >
           <ul class="list site-nav">
-            <li class="item"><a href="" class="link current">Студия</a></li>
+            <li class="item">
+              <a href="" class="link current">Студия</a>
+            </li>
             <li class="item">
               <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
@@ -94,13 +96,7 @@
                 </p>
                 <div class="form-field">
                   <label for="name" class="form-label">Имя</label>
-                  <input
-                    class="form-input"
-                    type="text"
-                    name="name"
-                    id="name"
-                    autofocus
-                  />
+                  <input class="form-input" type="text" name="name" id="name" />
                   <svg class="svg-icon">
                     <use href="./images/icons.svg#icon-person"></use>
                   </svg>
@@ -108,7 +104,13 @@
 
                 <div class="form-field">
                   <label for="tel" class="form-label">Телефон</label>
-                  <input class="form-input" type="tel" name="tel" id="tel" />
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    autofocus
+                  />
                   <svg class="svg-icon">
                     <use href="./images/icons.svg#icon-phone"></use>
                   </svg>
@@ -519,6 +521,20 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="ft-email">
+          <h2 class="email-title">Подпишитесь на рассылку</h2>
+          <input
+            class="ft-input"
+            type="text"
+            name="mail"
+            placeholder="E-mail"
+          />
+          <button class="button-ftmail link" type="button">
+            Подписаться<svg class="svg-ft-icon">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </footer>

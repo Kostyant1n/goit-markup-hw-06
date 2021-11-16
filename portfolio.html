@@ -260,14 +260,14 @@
     <footer class="ftr">
       <div class="container">
         <div class="ft-logo-contacts">
-          <a href="./index.html" class="footer-logo" lang="en">
+          <a href="./index.html" class="link footer-logo" lang="en">
             <span class="logo-color">Web</span>Studio</a
           >
           <address>
             <ul class="list contacts-footer">
               <li class="item">
                 <a
-                  class="adress-footer"
+                  class="link adress-footer"
                   href="https://goo.gl/maps/JjDCedRFyoNdZQir6"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
@@ -318,7 +318,22 @@
             </li>
           </ul>
         </div>
+        <div class="ft-email">
+          <h2 class="email-title">Подпишитесь на рассылку</h2>
+          <input
+            class="ft-input"
+            type="text"
+            name="mail"
+            placeholder="E-mail"
+          />
+          <button class="button-ftmail link" type="button">
+            Подписаться<svg class="svg-ft-icon">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
