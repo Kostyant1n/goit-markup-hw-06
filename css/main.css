@@ -115,6 +115,14 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 50%;
+  transition: color, background-color, border, fill;
+  transition-duration: var(--tr-ms);
+  transition-timing-function: var(--tr-cb);
+}
+
+.button-close:hover,
+.button-close:focus {
+  fill: var(--accent-pick-color);
 }
 
 /* form */
@@ -131,20 +139,22 @@ textarea {
   padding: 12px 11px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: color, background-color, border, fill;
+  transition-duration: var(--tr-ms);
+  transition-timing-function: var(--tr-cb);
 }
 
-.form {
-  outline: 1px solid tomato;
-  width: 100%;
-  margin: 0 auto;
-  padding: 40px;
+.form-input:focus {
+  border-color: var(--accent-pick-color);
+  outline: var(--accent-pick-color);
 }
 
 .form-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  letter-spacing: 0.03em;
+  /* letter-spacing: 0.03em; */
   margin-top: 0;
   margin-bottom: 12px;
 
@@ -169,20 +179,16 @@ textarea {
   color: #757575;
 }
 
-.form-field .icon {
-  position: absolute;
-  top: 30px;
-  left: 0px;
-  transform: translateY(0px);
-  background-color: black;
-}
-
 .form-field input::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.form-input:focus ~ .svg-icon {
+  fill: var(--accent-pick-color);
 }
 
 .comment {
@@ -193,6 +199,15 @@ textarea {
   box-sizing: border-box;
   border-radius: 4px;
   margin-bottom: 20px;
+}
+
+.form-field .svg-icon {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  transition: color, background-color, border, fill;
+  transition-duration: var(--tr-ms);
+  transition-timing-function: var(--tr-cb);
 }
 
 /* Advantages */
